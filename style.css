@@ -78,6 +78,8 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 1rem */
+    transition: color 0.3s ease, background-color 0.3s ease;
+
 }
 
 a {
@@ -104,7 +106,7 @@ section {
 
 .hero {
     display: flex;
-    height: 52rem;
+    height: 54rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -211,6 +213,18 @@ section {
         display: none;
     }
 }
+
+@media (max-width: 758px) {
+    .nav_btn {
+        background: none;
+        border-radius: 1.95313rem;
+        border: 1px solid var(--White-Primary, #F0F2F5);
+        color: #F0F2F5;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+}
+
+
 
 /* --Hero */
 
