@@ -104,12 +104,22 @@ section {
 
 .hero {
     display: flex;
-    height: 56rem;
+    height: 52rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
     align-self: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 44px;
 }
 
 .hero_headline {
@@ -213,7 +223,7 @@ section {
         gap: 2.5rem;
         align-self: stretch;
         height: auto;
-        padding-top: 34px;
+        padding-top: 12px;
     }
 }
 
