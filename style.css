@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano&family=Staatliches&family=Afacad&family=Space+Mono&family=Oswald&display=swap');
+
 
 * {
     margin: 0;
@@ -105,6 +105,7 @@ section {
 /* hero */
 
 .hero {
+    max-width: 90rem;
     display: flex;
     height: 54rem;
     flex-direction: column;
@@ -189,11 +190,68 @@ section {
 
 /* hero end */
 
-/* Skills */
+/* career overview */
 
+.career_overview {
+    display: flex;
+    padding: 4.5rem 0rem 4.375rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+}
 
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+}
 
-/* skills end */
+.overview_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+
+.overview_count {
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 7.2rem */
+    background: var(--N-G, linear-gradient(107deg, #B16CEA 12.16%, #E9628E 38.01%, #FF5E69 48.3%, #FF8A56 80.16%, #FFA84B 113.24%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overview_text {
+    color: var(--White-Primary, #F0F2F5);
+    font-family: Oswald;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+}
+
+.overview_text_font {
+    font-family: Oregano;
+}
+
+.overview_border {
+    background: #222;
+    width: 0.0625rem;
+    height: 7.5rem;
+}
+
+/* career overview End */
 
 
 /* Small size screens */
@@ -276,5 +334,59 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 1.125rem;
+    }
+}
+
+/* career overview */
+
+@media (max-width: 758px) {
+    .career_overview {
+        display: flex;
+        padding: 1.5rem 0rem;
+        padding-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 758px) {
+    .career_image {
+        width: 16.90538rem;
+        height: 11.875rem;
+    }
+}
+
+@media (max-width: 758px) {
+    .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 758px) {
+    .overview_count {
+        text-align: center;
+        font-family: "Space Mono";
+        font-weight: 900;
+        font-style: normal;
+        line-height: 120%; /* 4.8rem */
+    }
+}
+
+@media (max-width: 758px) {
+    .overview_text {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 758px) {
+    .overview_border {
+        width: 7.5rem;
+        height: 0.0625rem;
     }
 }
